@@ -13,16 +13,14 @@ El objetivo principal es ofrecer una visión clara de mi perfil: un profesional 
 Para la construcción de este sitio he utilizado:
 
 * **HTML5 & CSS3:** Estructura y diseño responsivo adaptado a todos los dispositivos.
-* **JavaScript (opcional):** Para añadir interactividad y dinamismo.
 * **GitHub Pages:** Como plataforma de despliegue y hosting gratuito.
 
 ##  Estructura del Sitio
 
 La web se divide en las siguientes secciones clave:
 
-1.  **Presentación:** Un resumen de quién soy, mi ambición profesional y mi enfoque en la tecnología.
+1.  **Presentación:** Un resumen de quién soy, mi ambición profesional y mi enfoque en la tecnología y mi situacion academica.
 2.  **Capacidades técnicas:** Detalle de mis capacidades técnicas actuales (montaje, mantenimiento, configuración de redes, etc.).
-3.  **Proyectos de Desarrollo:** Espacio dedicado a aplicaciones utiles, scripts y paginas web realizadas.
-4.  **Formación:** Mi trayectoria académica y mi futuro  en Grado Superior.
-5.  **Contacto:** Enlaces directos a mi perfil de LinkedIn, github y correo electrónico.
+3.  **Proyectos de Desarrollo(El cual todavia no esta):** Espacio dedicado a aplicaciones utiles, scripts y paginas web realizadas.
+4.  **Contacto:** Enlaces directos a mi perfil de LinkedIn, github y correo electrónico.
 
