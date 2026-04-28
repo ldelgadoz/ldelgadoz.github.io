@@ -24,3 +24,6 @@ La web se divide en las siguientes secciones clave:
 3.  **Proyectos de Desarrollo(El cual todavia no esta):** Espacio dedicado a aplicaciones utiles, scripts y paginas web realizadas.
 4.  **Contacto:** Enlaces directos a mi perfil de LinkedIn, github y correo electrónico.
 
+Dejo un enlace facilitado a mi pagina web
+
+https://ldelgadoz.github.io/
