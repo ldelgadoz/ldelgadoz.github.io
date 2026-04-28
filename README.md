@@ -26,10 +26,3 @@ La web se divide en las siguientes secciones clave:
 4.  **Formación:** Mi trayectoria académica y mi futuro  en Grado Superior.
 5.  **Contacto:** Enlaces directos a mi perfil de LinkedIn, github y correo electrónico.
 
-##  Instalación y Visualización Local
-
-Si deseas clonar este repositorio para ver el código en tu máquina local:
-
-1. Clona el repositorio:
-   ```bash
-   git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/tu-usuario/tu-repositorio.git)
