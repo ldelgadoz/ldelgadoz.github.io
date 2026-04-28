@@ -14,6 +14,11 @@
             --card: #1e293b;    
             --text: #f1f5f9; 
             --gray: #94a3b8;
+            /* Colores de tu Stack */
+            --git: #f05032;      
+            --python: #3776ab;   
+            --vscode: #007acc;   
+            --linux: #fcc624;    
         }
 
         body { 
@@ -87,15 +92,49 @@
         .project-card i { font-size: 2rem; color: var(--primary); margin-bottom: 1rem; }
         .project-card h3 { margin-top: 0; color: var(--primary); }
 
-        /* Estilo de los botones */
-        .btn-container {
+        /* Tech Stack Corregido para centrado absoluto */
+        .stack-group { 
+            margin-bottom: 3.5rem; 
             display: flex;
-            gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 2rem;
+            flex-direction: column;
+            align-items: center; /* Centra el contenido horizontalmente */
+            width: 100%;
+        }
+        
+        .stack-group h3 { 
+            color: var(--gray); 
+            font-size: 0.8rem; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            margin-bottom: 2rem;
+            text-align: center;
         }
 
+        .tech-stack {
+            display: flex;
+            justify-content: center; /* Centra los iconos dentro del flex */
+            align-items: center;
+            gap: 40px;
+            font-size: 3rem;
+            color: var(--gray);
+            flex-wrap: wrap;
+            width: 100%; /* Ocupa todo el ancho para que el centrado sea real */
+        }
+
+        .tech-stack i { transition: all 0.3s ease; cursor: pointer; }
+        
+        /* Efectos de color al pasar el ratón */
+        .fa-git-alt:hover { color: var(--git); filter: drop-shadow(0 0 8px var(--git)); }
+        .fa-python:hover { color: var(--python); filter: drop-shadow(0 0 8px var(--python)); }
+        .fa-html5:hover { color: #e34f26; filter: drop-shadow(0 0 8px #e34f26); }
+        .fa-windows:hover { color: #0078d6; filter: drop-shadow(0 0 8px #0078d6); }
+        .fa-linux:hover { color: var(--linux); filter: drop-shadow(0 0 8px var(--linux)); }
+        .fa-microsoft:hover { color: #f25022; filter: drop-shadow(0 0 8px #f25022); }
+        .fa-google:hover { color: #4285f4; filter: drop-shadow(0 0 8px #4285f4); }
+        .fa-network-wired:hover { color: #049fd9; filter: drop-shadow(0 0 8px #049fd9); }
+
+        /* Botones */
+        .btn-container { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 2rem; }
         .btn { 
             padding: 0.8rem 1.8rem; 
             text-decoration: none; 
@@ -104,35 +143,11 @@
             align-items: center;
             gap: 10px;
             font-weight: 700;
-            transition: all 0.2s;
+            transition: 0.2s;
         }
-
         .btn-primary { background: var(--primary); color: var(--dark); }
         .btn-secondary { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
-        
-        .btn:hover { opacity: 0.8; transform: scale(1.02); }
-
-        /* Tech Stack Icons */
-        .stack-group { margin-bottom: 2rem; }
-        .stack-group h3 { 
-            color: var(--gray); 
-            font-size: 0.8rem; 
-            text-transform: uppercase; 
-            letter-spacing: 2px; 
-            margin-bottom: 1.5rem;
-        }
-
-        .tech-stack {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            font-size: 2.2rem;
-            color: var(--gray);
-            flex-wrap: wrap;
-            opacity: 0.8;
-        }
-
-        .tech-stack i:hover { color: var(--primary); opacity: 1; transition: 0.3s; }
+        .btn:hover { opacity: 0.8; transform: scale(1.05); }
 
         footer {
             text-align: center;
@@ -147,7 +162,7 @@
 
 <header>
     <div class="profile-container">
-        <img src="https://via.placeholder.com/150" alt="Luis">
+        <img src="https://via.placeholder.com/150" alt="Luis Delgado Zamora">
     </div>
     <h1>Luis Delgado Zamora</h1>
     <p class="tagline">Técnico en Sistemas y Redes | Futuro Desarrollador DAM</p>
@@ -156,7 +171,7 @@
 <div class="container">
     <section id="sobre-mi">
         <h2>Sobre mí</h2>
-        <p>Soy una persona con objetivos definidos y una mentalidad orientada al crecimiento. Me encuentro formándome en sistemas informáticos mientras trabajo de forma independiente para alcanzar mis metas económicas y profesionales. Creo firmemente en el valor del esfuerzo constante y la superación personal, buscando siempre nuevas oportunidades para aprender y progresar en mi vida profesional.</p>
+        <p>Soy una persona con objetivos definidos y una mentalidad orientada al crecimiento. Me encuentro formándome en sistemas informáticos mientras trabajo de forma independiente para alcanzar mis metas económicas y profesionales. Creo firmemente en el valor del esfuerzo constante y la superación personal.</p>
     </section>
 
     <section id="capacidades">
@@ -165,43 +180,41 @@
             <div class="project-card">
                 <i class="fa-solid fa-network-wired"></i>
                 <h3>Sistemas y Redes</h3>
-                <p>Gestión de redes locales, mantenimiento de hardware y despliegue de sistemas operativos (Windows/Linux). Solidez técnica en entornos microinformáticos y Cisco.</p>
+                <p>Gestión de redes locales, configuración de entornos Windows/Linux y herramientas de Cisco. Solidez técnica en infraestructuras microinformáticas.</p>
             </div>
             <div class="project-card">
                 <i class="fa-solid fa-terminal"></i>
-                <h3>Desarrollo e IA</h3>
-                <p>Manejo fluido de Python y HTML para la creación de scripts y webs. Experiencia integrando herramientas de IA y control de versiones con Git.</p>
+                <h3>Desarrollo de Software</h3>
+                <p>Manejo fluido de Python y HTML. Aplicación de control de versiones con Git para optimizar el desarrollo y prepararme para el salto a DAM.</p>
             </div>
         </div>
     </section>
 
     <section id="stack" style="text-align: center;">
         <div class="stack-group">
-            <h3>Desarrollo e IA</h3>
+            <h3>Desarrollo</h3>
             <div class="tech-stack">
-                <i class="fa-solid fa-square-code" title="Visual Studio Code"></i>
-                <i class="fa-solid fa-sparkles" title="Gemini AI"></i>
-                <i class="fa-brands fa-git-alt" title="Git"></i>
-                <i class="fa-brands fa-python" title="Python"></i>
-                <i class="fa-brands fa-html5" title="HTML5"></i>
+                <i class="fa-brands fa-git-alt fa-fw" title="Git"></i>
+                <i class="fa-brands fa-python fa-fw" title="Python"></i>
+                <i class="fa-brands fa-html5 fa-fw" title="HTML5"></i>
             </div>
         </div>
 
         <div class="stack-group">
             <h3>Sistemas y Productividad</h3>
             <div class="tech-stack">
-                <i class="fa-brands fa-windows" title="Windows"></i>
-                <i class="fa-brands fa-linux" title="Linux"></i>
-                <i class="fa-brands fa-microsoft" title="Microsoft Office"></i>
-                <i class="fa-brands fa-google" title="Google Workspace"></i>
-                <i class="fa-solid fa-tower-broadcast" title="Cisco Networking"></i>
+                <i class="fa-brands fa-windows fa-fw" title="Windows"></i>
+                <i class="fa-brands fa-linux fa-fw" title="Linux"></i>
+                <i class="fa-brands fa-microsoft fa-fw" title="Microsoft Office"></i>
+                <i class="fa-brands fa-google fa-fw" title="Google Workspace"></i>
+                <i class="fa-solid fa-network-wired fa-fw" title="Cisco Networking"></i>
             </div>
         </div>
     </section>
 
     <section id="contacto" style="text-align: center;">
         <h2>Conectemos</h2>
-        <p>Estoy convencido de que una buena red de contactos es clave para el éxito profesional, así que te invito a conectar conmigo.</p>
+        <p>Estoy convencido de que una buena red de contactos es clave para el éxito profesional. ¿Hablamos?</p>
         
         <div class="btn-container">
             <a href="https://www.linkedin.com/in/luis-delgado-zamora-baaa4732b" class="btn btn-primary" target="_blank">
