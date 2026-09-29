@@ -149,6 +149,89 @@
         .btn-secondary { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
         .btn:hover { opacity: 0.8; transform: scale(1.05); }
 
+        /* Apartado Diseño Web */
+        .showcase-card {
+            background: var(--card);
+            padding: 2.2rem;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: all 0.3s ease;
+        }
+
+        .showcase-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.15);
+        }
+
+        .showcase-header {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            margin-bottom: 1.2rem;
+            flex-wrap: wrap;
+        }
+
+        .showcase-icon {
+            font-size: 2.2rem;
+            color: var(--primary);
+            background: rgba(56, 189, 248, 0.1);
+            padding: 0.8rem;
+            border-radius: 10px;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .showcase-title-area h3 {
+            margin: 0.3rem 0 0 0;
+            color: var(--text);
+            font-size: 1.4rem;
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--primary);
+            background: rgba(56, 189, 248, 0.12);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+        }
+
+        .showcase-card p {
+            color: var(--gray);
+            margin: 0 0 1.5rem 0;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .showcase-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .feature-tag {
+            background: #0f172a;
+            color: var(--text);
+            padding: 0.4rem 0.9rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            border: 1px solid #334155;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .feature-tag i {
+            color: var(--primary);
+        }
+
         footer {
             text-align: center;
             padding: 3rem;
@@ -187,6 +270,33 @@
                 <h3>Desarrollo de Software</h3>
                 <p>Manejo fluido de Python y HTML. Aplicación de control de versiones con Git para optimizar el desarrollo y prepararme para el salto a DAM.</p>
             </div>
+        </div>
+    </section>
+
+    <section id="diseno-web">
+        <h2>Diseño Web</h2>
+        <div class="showcase-card">
+            <div class="showcase-header">
+                <div class="showcase-icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <div class="showcase-title-area">
+                    <span class="badge">Servicios y Proyectos</span>
+                    <h3>Diseño y Desarrollo de Páginas Web</h3>
+                </div>
+            </div>
+            <p>
+                Diseño y desarrollo sitios web modernos, funcionales y adaptados a las necesidades de cada proyecto o negocio. Enfocado en la experiencia de usuario, velocidad de carga y adaptación óptima a todo tipo de pantallas.
+            </p>
+            <div class="showcase-features">
+                <span class="feature-tag"><i class="fa-solid fa-mobile-screen"></i> 100% Responsive</span>
+                <span class="feature-tag"><i class="fa-solid fa-bolt"></i> Rápido y Optimizado</span>
+                <span class="feature-tag"><i class="fa-solid fa-palette"></i> Diseño a Medida</span>
+            </div>
+            <!-- Reemplaza 'https://tu-web-de-diseno.com' por la URL real de tu página web -->
+            <a href="https://tu-web-de-diseno.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visitar mi web de diseño web
+            </a>
         </div>
     </section>
 
