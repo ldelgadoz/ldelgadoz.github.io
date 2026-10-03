@@ -6,7 +6,7 @@ Este proyecto ha sido diseñado para servir como carta de presentación profesio
 
 ## Objetivo del Proyecto
 
-El objetivo principal es ofrecer una visión clara de mi perfil: un profesional con base sólida en sistemas microinformáticos y redes, con una mentalidad orientada al crecimiento constante y al desarrollo de aplicaciones.
+El objetivo principal es ofrecer una visión clara de mi perfil: un profesional con base sólida en sistemas microinformáticos y redes, con una mentalidad orientada al crecimiento constante.
 
 ## Tecnologías Utilizadas
 
@@ -20,8 +20,8 @@ Para la construcción de este sitio he utilizado:
 La web se divide en las siguientes secciones clave:
 
 1.  **Presentación:** Un resumen de quién soy, mi ambición profesional y mi enfoque en la tecnología y mi situacion academica.
-2.  **Capacidades técnicas:** Detalle de mis capacidades técnicas actuales (montaje, mantenimiento, configuración de redes, etc.).
-3.  **Proyectos de Desarrollo(El cual todavia no esta):** Espacio dedicado a aplicaciones utiles, scripts y paginas web realizadas.
+2.  **Capacidades técnicas:** Detalle de mis capacidades técnicas actuales.
+3.  **Proyectos Personales y hobbies:** Espacio dedicado a proyectos personales, aplicaciones útiles, scripts y mis hobbies.
 4.  **Contacto:** Enlaces directos a mi perfil de LinkedIn, github y correo electrónico.
 
 Dejo un enlace facilitado a mi pagina web
