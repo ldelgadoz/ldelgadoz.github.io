@@ -9,9 +9,11 @@
     <link rel="icon" type="image/png" href="img/IconPerks_deception.webp">
     <style>
         :root { 
-            --primary: #38bdf8; 
-            --dark: #0f172a;    
-            --card: #1e293b;    
+            --primary: #9b1c3d;          /* Burdeos secundario / acento */
+            --primary-light: #c22b51;    /* Burdeos luminoso para texto e iconos */
+            --dark: #0a0a0a;             /* Fondo negro */
+            --card: #141414;             /* Superficie oscura para tarjetas */
+            --border: #2e1117;           /* Bordes con matiz burdeos */
             --text: #f1f5f9; 
             --gray: #94a3b8;
             /* Colores de tu Stack */
@@ -30,10 +32,10 @@
         }
 
         header { 
-            background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+            background: linear-gradient(180deg, #161616 0%, #0a0a0a 100%);
             padding: 5rem 1.5rem; 
             text-align: center; 
-            border-bottom: 1px solid #334155;
+            border-bottom: 1px solid var(--border);
         }
 
         .profile-container {
@@ -43,8 +45,8 @@
             border-radius: 50%;
             border: 3px solid var(--primary);
             overflow: hidden;
-            background: #334155;
-            box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+            background: #141414;
+            box-shadow: 0 0 25px rgba(155, 28, 61, 0.4);
         }
 
         .profile-container img {
@@ -56,7 +58,7 @@
         h1 { margin: 0; font-size: 3rem; font-weight: 800; letter-spacing: -1px; }
         
         .tagline { 
-            color: var(--primary); 
+            color: var(--primary-light); 
             font-weight: 600; 
             text-transform: uppercase; 
             letter-spacing: 2px; 
@@ -80,17 +82,18 @@
             background: var(--card); 
             padding: 2rem; 
             border-radius: 12px; 
-            border: 1px solid #334155;
+            border: 1px solid var(--border);
             transition: all 0.3s ease;
         }
 
         .project-card:hover {
             transform: translateY(-5px);
             border-color: var(--primary);
+            box-shadow: 0 10px 25px -5px rgba(155, 28, 61, 0.3);
         }
 
-        .project-card i { font-size: 2rem; color: var(--primary); margin-bottom: 1rem; }
-        .project-card h3 { margin-top: 0; color: var(--primary); }
+        .project-card i { font-size: 2rem; color: var(--primary-light); margin-bottom: 1rem; }
+        .project-card h3 { margin-top: 0; color: var(--primary-light); }
 
         /* Tech Stack Corregido para centrado absoluto */
         .stack-group { 
@@ -145,23 +148,25 @@
             font-weight: 700;
             transition: 0.2s;
         }
-        .btn-primary { background: var(--primary); color: var(--dark); }
-        .btn-secondary { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
-        .btn:hover { opacity: 0.8; transform: scale(1.05); }
+        .btn-primary { background: var(--primary); color: #ffffff; }
+        .btn-primary:hover { background: var(--primary-light); box-shadow: 0 0 15px rgba(194, 43, 81, 0.4); }
+        .btn-secondary { background: transparent; border: 2px solid var(--primary); color: #ffffff; }
+        .btn-secondary:hover { background: rgba(155, 28, 61, 0.2); border-color: var(--primary-light); }
+        .btn:hover { transform: scale(1.05); }
 
         /* Apartado Diseño Web */
         .showcase-card {
             background: var(--card);
             padding: 2.2rem;
             border-radius: 12px;
-            border: 1px solid #334155;
+            border: 1px solid var(--border);
             transition: all 0.3s ease;
         }
 
         .showcase-card:hover {
             transform: translateY(-5px);
             border-color: var(--primary);
-            box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.15);
+            box-shadow: 0 10px 25px -5px rgba(155, 28, 61, 0.35);
         }
 
         .showcase-header {
@@ -174,11 +179,11 @@
 
         .showcase-icon {
             font-size: 2.2rem;
-            color: var(--primary);
-            background: rgba(56, 189, 248, 0.1);
+            color: var(--primary-light);
+            background: rgba(155, 28, 61, 0.15);
             padding: 0.8rem;
             border-radius: 10px;
-            border: 1px solid rgba(56, 189, 248, 0.2);
+            border: 1px solid rgba(155, 28, 61, 0.35);
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -196,10 +201,11 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1.5px;
-            color: var(--primary);
-            background: rgba(56, 189, 248, 0.12);
+            color: var(--primary-light);
+            background: rgba(155, 28, 61, 0.2);
             padding: 0.25rem 0.75rem;
             border-radius: 20px;
+            border: 1px solid rgba(155, 28, 61, 0.3);
         }
 
         .showcase-card p {
@@ -217,19 +223,19 @@
         }
 
         .feature-tag {
-            background: #0f172a;
+            background: var(--dark);
             color: var(--text);
             padding: 0.4rem 0.9rem;
             border-radius: 6px;
             font-size: 0.85rem;
-            border: 1px solid #334155;
+            border: 1px solid var(--border);
             display: inline-flex;
             align-items: center;
             gap: 8px;
         }
 
         .feature-tag i {
-            color: var(--primary);
+            color: var(--primary-light);
         }
 
         footer {
@@ -237,7 +243,7 @@
             padding: 3rem;
             color: var(--gray);
             font-size: 0.85rem;
-            border-top: 1px solid #334155;
+            border-top: 1px solid var(--border);
         }
     </style>
 </head>
@@ -245,7 +251,7 @@
 
 <header>
     <div class="profile-container">
-        <img src="img/WA_1789578532297.jpeg" alt="Luis Delgado Zamora">
+        <img src="img/72880.jpg" alt="Luis Delgado Zamora">
     </div>
     <h1>Luis Delgado Zamora</h1>
     <p class="tagline">Técnico en Sistemas y Redes | Formandome para DAM</p>
