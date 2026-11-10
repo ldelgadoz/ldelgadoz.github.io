@@ -6,7 +6,12 @@
     <title>Luis Delgado Zamora | Portfolio Profesional IT</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="img/IconPerks_deception.webp">
+    <meta name="description" content="Luis Delgado Zamora: técnico en Sistemas Microinformáticos y Redes, estudiante de DAM. Soporte técnico, Python, Git y diseño web en Alcalá de Henares, Madrid.">
+    <meta property="og:title" content="Luis Delgado Zamora | Portfolio Profesional IT">
+    <meta property="og:description" content="Técnico en Sistemas y Redes, estudiante de DAM. Soporte técnico, Python, Git y diseño web.">
+    <meta property="og:image" content="https://ldelgadoz.github.io/img/perfil.jpg">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/webp" href="img/IconPerks_deception.webp">
     <style>
         :root { 
             --primary: #9b1c3d;          /* Burdeos secundario / acento */
@@ -17,10 +22,9 @@
             --text: #f1f5f9; 
             --gray: #94a3b8;
             /* Colores de tu Stack */
-            --git: #f05032;      
-            --python: #3776ab;   
-            --vscode: #007acc;   
-            --linux: #fcc624;    
+            --git: #f05032;
+            --python: #3776ab;
+            --linux: #fcc624;
         }
 
         body { 
@@ -68,7 +72,7 @@
 
         .container { max-width: 900px; margin: auto; padding: 3rem 1.5rem; }
 
-        h2 { border-left: 4px solid var(--primary); padding-left: 15px; font-size: 1.8rem; margin-bottom: 2rem; }
+        h2 { border-left: 4px solid var(--primary); padding-left: 15px; font-size: 1.8rem; margin-bottom: 2rem; text-align: left; }
 
         section { margin-bottom: 5rem; }
 
@@ -124,7 +128,9 @@
             width: 100%; /* Ocupa todo el ancho para que el centrado sea real */
         }
 
-        .tech-stack i { transition: all 0.3s ease; cursor: pointer; }
+        .tech-item { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+        .tech-item span { font-size: 0.75rem; font-weight: 600; letter-spacing: 1px; color: var(--gray); }
+        .tech-stack i { transition: all 0.3s ease; cursor: default; }
         
         /* Efectos de color al pasar el ratón */
         .fa-git-alt:hover { color: var(--git); filter: drop-shadow(0 0 8px var(--git)); }
@@ -238,6 +244,17 @@
             color: var(--primary-light);
         }
 
+        /* Formación, experiencia y certificaciones */
+        .timeline-item { padding: 1.4rem 1.6rem; background: var(--card); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 15px; }
+        .timeline-item h3 { margin: 0 0 0.2rem 0; font-size: 1.1rem; }
+        .timeline-item .where { color: var(--primary-light); font-weight: 600; font-size: 0.9rem; }
+        .timeline-item .meta { color: var(--gray); font-size: 0.85rem; margin-bottom: 0.6rem; }
+        .timeline-item p { margin: 0.4rem 0 0 0; color: var(--gray); font-size: 0.95rem; }
+        .cert-card { background: var(--card); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border); }
+        .cert-card h3 { margin: 0.5rem 0 0.4rem 0; font-size: 1.05rem; }
+        .cert-card p { margin: 0; color: var(--gray); font-size: 0.9rem; }
+        .cert-card .issuer { color: var(--primary-light); font-size: 0.75rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+
         footer {
             text-align: center;
             padding: 3rem;
@@ -251,16 +268,16 @@
 
 <header>
     <div class="profile-container">
-        <img src="img/72880.jpg" alt="Luis Delgado Zamora">
+        <img src="img/perfil.jpg" alt="Foto de Luis Delgado Zamora" width="130" height="130">
     </div>
     <h1>Luis Delgado Zamora</h1>
-    <p class="tagline">Técnico en Sistemas y Redes | Formandome para DAM</p>
+    <p class="tagline">Técnico en Sistemas y Redes | Estudiante de DAM</p>
 </header>
 
 <div class="container">
     <section id="sobre-mi">
         <h2>Sobre mí</h2>
-        <p>Soy una persona con objetivos definidos y una mentalidad orientada al crecimiento. Soy tecnico en sistemas microinformaticos y actualmente me encuentro formándome en Desarrollo de aplicaciones multiplataforma mientras trabajo de forma independiente para alcanzar mis metas económicas y profesionales. Creo firmemente en el valor del esfuerzo constante y la superación personal.</p>
+        <p>Soy técnico en Sistemas Microinformáticos y Redes y actualmente curso el ciclo de Desarrollo de Aplicaciones Multiplataforma (DAM). He trabajado en soporte técnico gestionando incidencias de usuarios y programo en Python y HTML. Busco mi primera oportunidad en el sector IT, en soporte o en desarrollo, y también hago webs a medida para negocios locales de Alcalá de Henares y alrededores.</p>
     </section>
 
     <section id="capacidades">
@@ -269,12 +286,78 @@
             <div class="project-card">
                 <i class="fa-solid fa-network-wired"></i>
                 <h3>Sistemas y Redes</h3>
-                <p>Gestión de redes locales, configuración de entornos Windows/Linux y herramientas de Cisco. Solidez técnica en infraestructuras microinformáticas.</p>
+                <p>Gestión de redes locales, configuración de entornos Windows y Linux y herramientas de Cisco. Soporte a usuarios y resolución de incidencias con Jira.</p>
             </div>
             <div class="project-card">
                 <i class="fa-solid fa-terminal"></i>
                 <h3>Desarrollo de Software</h3>
-                <p>Manejo fluido de Python y HTML. Aplicación de control de versiones con Git para optimizar el desarrollo. Estoy adquiriendo conocimientos de bases de datos y nuevos lenguajes de programación a la vez que refuerzo y aumento los conocimientos ya poseidos.</p>
+                <p>Programación en Python y HTML, y control de versiones con Git. Ahora estoy aprendiendo bases de datos y nuevos lenguajes dentro de DAM.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack">
+        <h2>Herramientas</h2>
+        <div class="stack-group">
+            <h3>Desarrollo</h3>
+            <div class="tech-stack">
+                <div class="tech-item"><i class="fa-brands fa-git-alt fa-fw" title="GIT"></i><span>GIT</span></div>
+                <div class="tech-item"><i class="fa-brands fa-python fa-fw" title="PYTHON"></i><span>PYTHON</span></div>
+                <div class="tech-item"><i class="fa-brands fa-html5 fa-fw" title="HTML5"></i><span>HTML5</span></div>
+            </div>
+        </div>
+
+        <div class="stack-group">
+            <h3>Sistemas y Productividad</h3>
+            <div class="tech-stack">
+                <div class="tech-item"><i class="fa-brands fa-windows fa-fw" title="WINDOWS"></i><span>WINDOWS</span></div>
+                <div class="tech-item"><i class="fa-brands fa-linux fa-fw" title="LINUX"></i><span>LINUX</span></div>
+                <div class="tech-item"><i class="fa-brands fa-microsoft fa-fw" title="MICROSOFT 365"></i><span>MICROSOFT 365</span></div>
+                <div class="tech-item"><i class="fa-brands fa-google fa-fw" title="GOOGLE WORKSPACE"></i><span>GOOGLE WORKSPACE</span></div>
+                <div class="tech-item"><i class="fa-solid fa-network-wired fa-fw" title="REDES / CISCO"></i><span>REDES / CISCO</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formacion">
+        <h2>Formación y experiencia</h2>
+        <div class="timeline-item">
+            <h3>CFGS Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
+            <div class="where">Digitech Madrid</div>
+            <div class="meta">En curso</div>
+        </div>
+        <div class="timeline-item">
+            <h3>Becario de soporte técnico (CAU)</h3>
+            <div class="where">Grupo SM · Boadilla del Monte</div>
+            <div class="meta">Hasta junio de 2026</div>
+            <p>Gestión de incidencias y solicitudes con Jira, atención al usuario, soporte técnico y escalado de incidencias.</p>
+        </div>
+        <div class="timeline-item">
+            <h3>CFGM Sistemas Microinformáticos y Redes (SMR)</h3>
+            <div class="where">Las Naves Salesianos · Alcalá de Henares</div>
+        </div>
+    </section>
+
+    <section id="certificaciones">
+        <h2>Certificaciones</h2>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+            <div class="cert-card">
+                <i class="fa-brands fa-python" style="font-size:1.8rem;color:var(--primary-light)"></i>
+                <h3>Python</h3>
+                <div class="issuer">Santander Open Academy</div>
+                <p>8 horas · abril de 2026</p>
+            </div>
+            <div class="cert-card">
+                <i class="fa-solid fa-robot" style="font-size:1.8rem;color:var(--primary-light)"></i>
+                <h3>Cursor con Python: desarrollo inteligente con IA</h3>
+                <div class="issuer">Santander Open Academy</div>
+                <p>8 horas · abril de 2026</p>
+            </div>
+            <div class="cert-card">
+                <i class="fa-brands fa-google" style="font-size:1.8rem;color:var(--primary-light)"></i>
+                <h3>Google: Inteligencia Artificial y productividad</h3>
+                <div class="issuer">Santander Open Academy</div>
+                <p>2 horas · septiembre de 2025</p>
             </div>
         </div>
     </section>
@@ -292,51 +375,31 @@
                 </div>
             </div>
             <p>
-                Diseño y desarrollo sitios web modernos, funcionales y adaptados a las necesidades de cada proyecto o negocio. Enfocado en la experiencia de usuario, velocidad de carga y adaptación óptima a todo tipo de pantallas.
+                Diseño y desarrollo sitios web modernos y funcionales, adaptados a las necesidades de cada proyecto o negocio. Enfocado en la experiencia de usuario, velocidad de carga y adaptación óptima a todo tipo de pantallas.
             </p>
             <div class="showcase-features">
                 <span class="feature-tag"><i class="fa-solid fa-mobile-screen"></i> 100% Responsive</span>
                 <span class="feature-tag"><i class="fa-solid fa-bolt"></i> Rápido y Optimizado</span>
                 <span class="feature-tag"><i class="fa-solid fa-palette"></i> Diseño a Medida</span>
             </div>
-            <!-- Reemplaza 'https://tu-web-de-diseno.com' por la URL real de tu página web -->
             <a href="https://slipstream-web-6ta.pages.dev/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visitar mi web de diseño web
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver mi web de diseño
             </a>
-        </div>
-    </section>
-
-    <section id="stack" style="text-align: center;">
-        <div class="stack-group">
-            <h3>Desarrollo</h3>
-            <div class="tech-stack">
-                <i class="fa-brands fa-git-alt fa-fw" title="Git"></i>
-                <i class="fa-brands fa-python fa-fw" title="Python"></i>
-                <i class="fa-brands fa-html5 fa-fw" title="HTML5"></i>
-            </div>
-        </div>
-
-        <div class="stack-group">
-            <h3>Sistemas y Productividad</h3>
-            <div class="tech-stack">
-                <i class="fa-brands fa-windows fa-fw" title="Windows"></i>
-                <i class="fa-brands fa-linux fa-fw" title="Linux"></i>
-                <i class="fa-brands fa-microsoft fa-fw" title="Microsoft Office"></i>
-                <i class="fa-brands fa-google fa-fw" title="Google Workspace"></i>
-                <i class="fa-solid fa-network-wired fa-fw" title="Cisco Networking"></i>
-            </div>
         </div>
     </section>
 
     <section id="contacto" style="text-align: center;">
         <h2>Conectemos</h2>
-        <p>Estoy convencido de que una buena red de contactos es clave para el éxito profesional. ¿Hablamos?</p>
+        <p>¿Tienes una oportunidad, unas prácticas o un proyecto web? Escríbeme o conectemos en LinkedIn.</p>
         
         <div class="btn-container">
-            <a href="https://www.linkedin.com/in/luis-delgado-zamora-baaa4732b" class="btn btn-primary" target="_blank">
+            <a href="mailto:luisdelgadozam@gmail.com" class="btn btn-primary">
+                <i class="fa-solid fa-envelope"></i> Email
+            </a>
+            <a href="https://www.linkedin.com/in/luis-delgado-zamora-baaa4732b" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-linkedin"></i> LinkedIn
             </a>
-            <a href="https://github.com/ldelgadoz" class="btn btn-secondary" target="_blank">
+            <a href="https://github.com/ldelgadoz" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-github"></i> GitHub
             </a>
         </div>
